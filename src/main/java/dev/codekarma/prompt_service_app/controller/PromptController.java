@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PromptController {
 
-    private ChatClient chatClient;
+    private final ChatClient chatClient;
 
     public PromptController(ChatClient chatClient) {
         this.chatClient = chatClient;

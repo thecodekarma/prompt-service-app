@@ -14,7 +14,7 @@ import java.util.Map;
 @RestController
 public class PromptTemplateController {
 
-    private ChatClient chatClient;
+    private final ChatClient chatClient;
 
     @Value("classpath:prompts/youtube-songs.st")
     private Resource youtubePromptResource;
